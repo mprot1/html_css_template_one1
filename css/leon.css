@@ -1,0 +1,407 @@
+/* Start Global Rules */
+
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: "Work Sans", sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+} 
+
+.spacial-h {
+    color: #f6f6f6;
+    font-size: 130px;
+    text-align: center;
+    margin-bottom: -76px;
+    font-weight: 800;
+}
+.spacial-p {
+    font-size: 25px;
+    color:#575757;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .container{
+        max-width: 750px;
+    }
+    .container h2 {
+        font-size: 70px;
+        margin-bottom: -50PX ;
+    }
+    .services .container .services-box {
+
+        display: none;
+    }
+    .about .container .about-contect .about-box div{
+        display: none;
+    }
+    .contact .container .contact-content h4 {
+        display: flex;
+        color: #10cab7;
+        font-size: 50PX;
+    }
+    .contact .container .contact-content p {
+        color: #2c4755;
+    }
+}
+
+@media (min-width: 768px) {
+    .container{
+        width: 720px;
+    }
+
+}
+
+@media (min-width: 992px) {
+    .container{
+        width: 950px;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .container{
+        width: 1160px;
+    }
+}
+
+/* End Global Rules */
+
+/* Start Header */
+.header {
+    padding: 20px ;
+    background-color: #ffffff;
+}
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .logo {
+    width: 60px;
+}
+
+.header .links {
+    position: relative;
+}
+
+.header .links .icon {
+    width: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+}
+.header .links .icon span {
+    background-color: #666;
+    margin-bottom: 5px;
+    height: 2px;
+}
+
+.header .links .icon span:first-child {
+    width: 100%;
+}
+.header .links .icon span:nth-child(2) {
+    width: 60%;
+}
+.header .links .icon span:last-child {
+    width: 100%;
+}
+
+.header .links .icon:hover span {
+    width: 100%;
+    transition: 0.4s;
+}
+
+.header .links  ul {
+    position: absolute;
+    display: none;
+    right: -0%;
+    margin: 0;
+    width: 220px;
+
+}
+.header .links:hover ul {
+    display: block;
+}
+.header .links ul li  {
+    text-decoration: none;
+    background-color: #ffffff;
+    padding: 20px 80px;
+    padding-left: 15px;
+    list-style: none;
+    border-bottom: #666 1px solid;
+}
+.header .links ul li:hover a  {
+    padding-left: 25px ;
+    transition: 0.6s;
+}
+.header .links ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #666;
+}
+/* End Header */
+
+/* Start Landing Section */
+
+.landing {
+    background-color: #f6f6f6;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.landing .intro-text h1 {
+    color: #10cab7;
+    font-size: 100px;
+}
+.landing .intro-text p {
+    color: #2c4755;
+    font-size: 33px;
+    letter-spacing: 3px;
+    
+}
+/* End Landing Section */
+
+/* Start Features Section */
+.features {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #ffffff;
+}
+
+.features .container {
+    display: grid;
+    grid-template-columns: repeat( auto-fill , minmax(300px , 1fr) );
+    gap: 20px;
+}
+
+.features .container .feat {
+    text-align: center;
+    padding: 20px;
+}
+
+.features .container .feat i {
+    color: #10cab7;
+}
+.features .container .feat h3 {
+    color: #2c4755;
+    font-size: 22px;
+    font-weight: 800;
+    margin: 30PX 0;
+}
+
+.features .container .feat p {
+    color: #575757;
+    font-size: 17PX;
+}
+/* End Features Section*/
+
+/* start Services Section*/
+.services .container .services-contect{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.services .container .services-contect .col  {
+    display: grid;
+    grid-template-columns: repeat( auto-fill, minmax(300px , 1fr));
+    gap: 20px;
+    padding: 60px 0;
+
+}
+
+.services .container .services-contect .col .srv {
+    display: flex;
+}
+
+.services .container .services-contect .col i {
+    color: #10cab7;
+    padding: 30px;
+    font-size: 30px;
+}
+
+.services .container .services-contect .col .srv-text * {
+    text-align: left;
+}
+.services .container .services-contect .col .srv-text h3 {
+    color: #2c4755;
+    font-size: 20px;
+}
+.services .container .services-contect .col .srv-text p {
+    font-size: 15px;
+}
+
+.services .container .services-contect .services-block {
+    background-color: #2c4755;
+    width: 100px;
+    height: 380px;
+    display:flex ;
+    align-items: center;
+    justify-content: end;
+}
+
+.services .container .services-contect .services-block samp {
+    background-color: #f6f6f6;
+    height: 280px;
+    width: 180px;
+    position: absolute;
+    box-shadow: 0PX 0PX 7px 0px #00000073;
+    margin-right: 20px ;
+}
+.services-box {
+    width: 400px;
+    display: flex;
+    justify-content: end;
+}
+
+/* End Services Section*/
+
+/* Start Portfolio Section*/
+.portfolio {
+    background-color: #fafafa;
+    display: flex;
+    justify-content: center;
+}
+.portfolio .portfolio-contect {
+    display: grid;
+    gap: 60px;
+    grid-template-columns: repeat(auto-fill , minmax(300px , 1fr));
+    padding: 60px 0;
+}
+.portfolio .portfolio-contect .project {
+    background-color: white;
+    width: 300px;
+    min-height: 400px;
+    margin: auto;
+}
+.portfolio .portfolio-contect .project .project-img {
+    background-color: #f6f6f6;
+    height: 280px ;
+    width:100% ;
+}
+.portfolio .portfolio-contect .project h3 {
+    padding-left: 10px;
+}
+.portfolio .portfolio-contect .project p{
+    font-size: 13px;
+    padding-left: 10px;
+}
+/* End Portfolio Section*/
+
+/* End Start About Section*/
+.about .container .about-contect {
+    display: flex;
+    padding: 60px 0 ;
+    justify-content: center;
+}
+.sabout .container .about-contect .about-box  {
+    height: 250px;
+    width: 250px;
+}
+
+.about .container .about-contect .about-box div {
+    position: relative;
+    margin-right: 180PX  ;
+    height: 250px;
+    width: 250px;
+    background-color: #f6f6f6;
+    box-shadow:0px 0px 6px #00000040;
+}
+.about .container .about-contect .about-box div::before {
+    content: "";
+    position: absolute;
+    background-color: #fafafa;
+    width: 100px;
+    height: calc(100% + 150px);
+    z-index: -1;
+    bottom: -70px;
+    left: -10px;
+
+}
+.about .container .about-contect .about-box div::after {
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 70%;
+    z-index: -1;
+    top: -30px;
+    right:  -100px;
+    border-bottom: #10cab7 70px solid;
+    border-left: #10cab7 70px solid;
+
+
+}
+.about .container .about-contect .about-text {
+    padding: 0 40px;
+}
+.about .container .about-contect .about-text samp {
+    content: "";
+    background-color: #10cab7;
+    height: 2px;
+    width: 100%;
+    display: block;
+}
+
+.about .container .about-contect .about-text h3 {
+    color: #2c4755;
+}
+.about .container .about-contect .about-text P {
+    color: #575757;
+}
+/* End About Section*/
+
+/* Start Contact Section*/
+.contact {
+    background-color: #fafafa;
+}
+.contact .container .contact-content{
+    padding: 100px 0;
+}
+.contact .container .contact-content h3 {
+    color: #2c4755;
+    font-size: 5vw ;
+    margin-bottom: 20px;
+}
+.contact .container .contact-content h4 {
+    color: #10cab7;
+    font-size: 4vw;
+    Margin: 20px 0 ;
+}
+.contact .container .contact-content p {
+    color: #2c4755;
+}
+/*End Contact Section*/
+
+
+
+/*End Contact Section*/
+.footer {
+    background-color: #2c4755;
+}
+.footer .container .footer-content p{
+    color: white;
+    margin: 0;
+    padding: 60px 0;
+    font-size: 20px;
+    text-align: center;
+}
+.footer .container .footer-content p span {
+    color: #10cab7;
+}
+/*End Contact Section*/
+
